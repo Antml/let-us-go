@@ -10,11 +10,12 @@
     <script src="items.js"></script>
     <script src="cart-items.js"></script>
     <script src="changecartcount.js"></script>
+    <script src="topay.js"></script>
     <title>结算列表</title>
-    
+
 </head>
 <body>
-<nav class="navbar navbar-default navbar-inverse" role="navigation" >
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -33,15 +34,52 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
-                    <a href="cart.html" class="dropdown-toggle" data-toggle="dropdown">Cart(<span class="NUM">0</span>)</a>
+                    <a href="cart.html" >Cart(<span class="NUM">0</span>)</a>
 
                 </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 </nav>
 <div>
+    <div >
+        <form class="form-inline text-center" role="form">
+            <div class="form-group has-success has-feedback ">
+                <label class="control-label" for="inputSuccess4">请填写正确的收货地址：</label>
+                <input type="text" class="form-control" id="inputSuccess4">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+            <div>&nbsp; </div>
+            <div>&nbsp; </div>
+            <div>&nbsp; </div>
+            <div>&nbsp; </div>
+            <div>&nbsp; </div>
+
+
+        </form>
+        <h3 >您本次购买的商品有:<h3>
+    </div>
+    <div>&nbsp; </div>
+    <div>&nbsp; </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+
+
+    <div id="over">
+        </div>
+    <div>&nbsp; </div>
+    <div>&nbsp; </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">总计：<span id="buttom"></span></div>
 
     </div>
+
+</div>
 </body>
 </html>

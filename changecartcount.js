@@ -51,7 +51,7 @@ function getCartItems(element) {
 //function pushCart(cartItems) {
 function pushCart() {
     var cartItems = Localstorage.getLocalstorage('cartItems');
-    console.log(cartItems);
+
     $('#getItems').append(
             '<div class="row text-center">'
             + '<div class="col-md-1"></div>'
@@ -71,7 +71,7 @@ function pushCart() {
                 '<div class="row text-center">'
                 + '<div class="col-md-1"></div>'
                 + '<div class="col-md-2">' + cartItems[i].item.name + '</div>'
-                + '<div class="col-md-2"><span >' + cartItems[i].item.price + '元/' + '</span></div>'
+                + '<div class="col-md-2"><span >' + cartItems[i].item.price + '元' + '</span></div>'
                 + '<div class="col-md-2"><span >' + cartItems[i].item.unit + '</span></div>'
                 + '<div class="col-md-2"><span >' + cartItems[i].quantity + '</span></div>'
                 + '<div class="col-md-2"><span >' + ((cartItems[i].quantity) * (cartItems[i].item.price)) + '元</span></div>'
