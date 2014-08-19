@@ -6,9 +6,13 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.2.0-dist/css/bootstrap.min.css">
     <script src="lib/jquery-1.11.1.min.js"></script>
     <script src="lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-    <script src="try.js"></script>
-    <script src="assist.js"></script>
+    <!--<script src="main.js"></script>-->
+    <!--<script src="try.js"></script>-->
+    <!--<script src="assist.js"></script>-->
+    <!--<script src="main.js"></script>-->
+    <script src="items.js"></script>
+    <script src="cart-items.js"></script>
+    <script src="changecartcount.js"></script>
     <title>我的购物车</title>
 </head>
 
@@ -32,7 +36,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
-                    <a href="cart.html" class="dropdown-toggle" data-toggle="dropdown">Cart(<span id="num">0</span>)</a>
+                    <a href="cart.html" class="dropdown-toggle" data-toggle="dropdown">Cart(<span class="NUM">0</span>)</a>
 
                 </li>
             </ul>
@@ -52,10 +56,20 @@
 
 
     </div>
+    </div>
+
+<!--<div class="no">-->
+    <!--<p>您还没有购买任何商品！-->
+    <!--</p>-->
+ <!--</div>-->
+<div id="getItems">
+
 </div>
-<div class="getItems">
-
-    <div>
-
+<div >
+&nbsp&nbsp&nbsp总价格：<span id="total"></span>
+</div>
+<div class="text-center ">
+    <button type="button" class="btn btn-primary btn-lg">去结算</button>
+    </div>
 </body>
 </html>
